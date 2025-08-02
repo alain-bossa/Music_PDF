@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:pdfx/pdfx.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
@@ -40,7 +39,7 @@ class _PdfListScreenState extends State<PdfListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mes Documents PDF'),
+        title: const Text('Partitions de musique'),
       ),
       body: ListView.builder(
         itemCount: pdfFiles.length,
