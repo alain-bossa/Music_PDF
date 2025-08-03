@@ -361,7 +361,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
           IconButton(
             icon: Icon(
               Icons.pan_tool_alt,
-              color: _currentMode == AnnotationMode.none ? Colors.yellow : Colors.white,
+              color: _currentMode == AnnotationMode.none ? Colors.yellow : const Color.fromARGB(255, 48, 63, 226),
             ),
             onPressed: () => _setCurrentMode(AnnotationMode.none),
             tooltip: 'Mode navigation',
@@ -369,7 +369,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
           IconButton(
             icon: Icon(
               Icons.edit,
-              color: _currentMode == AnnotationMode.freehand ? Colors.yellow : Colors.white,
+              color: _currentMode == AnnotationMode.freehand ? Colors.yellow : const Color.fromARGB(255, 48, 63, 226),
             ),
             onPressed: () => _setCurrentMode(AnnotationMode.freehand),
             tooltip: 'Mode dessin',
@@ -377,7 +377,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
           IconButton(
             icon: Icon(
               Icons.text_fields,
-              color: _currentMode == AnnotationMode.text ? Colors.yellow : Colors.white,
+              color: _currentMode == AnnotationMode.text ? Colors.yellow : Color.fromARGB(255, 48, 63, 226),
             ),
             onPressed: () => _setCurrentMode(AnnotationMode.text),
             tooltip: 'Mode texte',
